@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário Jurídico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        header img {
+            width: 150px;
+            display: block;
+            margin: 0 auto;
+        }
+        header h1 {
+            font-size: 24px;
+            margin: 10px 0 0;
+        }
+        .main {
+            background: #ffffff;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #35424a;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group textarea {
+            height: 100px;
+        }
+        .form-group button {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: 0;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background: #e8491d;
+        }
+        .form-group .section-title {
+            font-size: 18px;
+            color: #e8491d;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="C:\Users\marco\OneDrive\Área de Trabalho\Legacy logo.png" alt="Legacy Franchising" style="position: absolute; top: 20px; right: 20px;">
+        <h1>Questionário Jurídico</h1>
+    </header>
+
+    <div class="container main">
+        <form id="diagnosticoForm">
+            <div class="form-group">
+                <label for="companyName">Nome da Empresa:</label>
+                <input type="text" id="companyName" name="Nome da Empresa" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Data:</label>
+                <input type="date" id="date" name="Data" required>
+            </div>
+            <div class="form-group">
+                <label for="projectCode">Código do Projeto:</label>
+                <input type="text" id="projectCode" name="Código do Projeto" required>
+            </div>
+
+            <div class="form-group section-title">FRANQUEDORA</div>
+            <div class="form-group">
+                <label for="marketTime">Qual será o nome da Franqueadora (razão social)?</label>
+                <textarea id="marketTime" name="Nome Franqueadora" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="standardProcesses">Qual é o Endereço da sede da Franqueadora?</label>
+                <textarea id="standardProcesses" name="Endereço da Franqueadora" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="replicableModel">Qual Telefone deverá constar na COF?</label>
+                <textarea id="replicableModel" name="Telefone da Franqueadora" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="managementSoftware">Qual E-mail deverá constar na COF?</label>
+                <textarea id="managementSoftware" name="E-mail da Franqueadora" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="managementSoftware">Qual o CNPJ da Franqueadora?</label>
+                <textarea id="managementSoftware" name="CNPJ da Franqueadora" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="franchiseInvestment">Quem serão os Sócios da franqueadora?</label>
+                <textarea id="franchiseInvestment" name="Sócios da Franqueadora" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="profitMargin">Quem será o sócio Administrador da franqueadora?</label>
+                <textarea id="profitMargin" name="Sócio Administrador" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="monthlyProfit">Qual Enquadramento fiscal da franqueadora?</label>
+                <textarea id="monthlyProfit" name="Enquadramento Fiscal" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="monthlyRevenue">Classificação Nacional de Atividade Econômica da Franqueadora (CNAE)?</label>
+                <textarea id="monthlyRevenue" name="CNAE" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="seasonality">Qual(is) Atividade(s) principal(is) das unidades franqueadas (CNAE)?</label>
+                <textarea id="seasonality" name="Atividade(s) Principal(is)" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="brandRegistration">Qual é o Site da franqueadora?</label>
+                <textarea id="brandRegistration" name="Site da Franquadora" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="visualIdentity">Qual será o Nome da Rede de Franquias?</label>
+                <textarea id="visualIdentity" name="Nome da Rede de Franquias" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="marketingProcesses">Informe o número de registro da marca no INPI:</label>
+                <textarea id="marketingProcesses" name="Nº Registro da Marca no INPI" required></textarea>
+            </div>
+            
+
+            <div class="form-group section-title">DADOS HISTÓRICOS</div>
+            <div class="form-group">
+                <label for="supportStructure">Sobre a empresa – Escreva a história da empresa e do negócio, que constará na COF: (nossa história):</label>
+                <textarea id="supportStructure" name="História da Empresa" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="trainingPrograms">Qualificação das empresas que estejam ao Franqueador ligadas, identificando-as com os respectivos números de inscrição no Cadastro Nacional da Pessoa Jurídica (CNPJ):</label>
+                <textarea id="trainingPrograms" name="Empresas ligadas" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="continuousSupport">Como será feita a comunicação com o franqueado e informação sobre qual o endereço eletrônico a ser utilizado para tanto, se for o caso (e-mail, etc.)?</label>
+                <textarea id="continuousSupport" name="Comunicação" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="legalCompliance">Indicação das ações judiciais relativas à franquia que questionem o sistema ou que possam comprometer a operação da franquia no País, nas quais sejam parte o franqueador, as empresas controladoras, o subfranqueador e os titulares de marcas e demais direitos de propriedade intelectual:</label>
+                <textarea id="legalCompliance" name="Ações Judiciais" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="franchiseContracts">Informações claras e detalhadas quanto à obrigação do franqueado de adquirir quaisquer bens, serviços ou insumos necessários à implantação, operação ou administração de sua franquia apenas de fornecedores indicados e aprovados pelo franqueador, incluindo relação completa desses fornecedores:</label>
+                <textarea id="franchiseContracts" name="Obrigações do Franqueado" required></textarea>
+            </div>
+
+            <div class="form-group section-title">SELEÇÃO DE FRANQUEADOS</div>
+            <div class="form-group">
+                <label for="franchiseCriteria">Perfil do franqueado ideal no que se refere a experiência anterior, escolaridade e outras características que deve ter, obrigatória ou preferencialmente:</label>
+                <textarea id="franchiseCriteria" name="Perfil do Franqueado" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="idealProfile">Requisitos quanto ao envolvimento direto do franqueado na operação e na administração do negócio:</label>
+                <textarea id="idealProfile" name="Envolvimento do Franqueado" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="supplyChain">Indicação do que é oferecido ao franqueado pelo franqueador e em quais condições, no que se refere a Suporte, supervisão de rede, serviços, incorporação de inovações tecnológicas às franquias, treinamento do franqueado e de seus funcionários, especificando duração, conteúdo e custos, manuais de franquia, auxílio na análise e na escolha do ponto onde será instalada a franquia...</label>
+                <textarea id="supplyChain" name="O que é oferecido" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="inventoryManagement">layout e padrões arquitetônicos das instalações do franqueado, incluindo arranjo físico de equipamentos e instrumentos, memorial descritivo, composição e croqui:</label>
+                <textarea id="inventoryManagement" name="Padrões Arquitetônicos" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="distributionChannels">Informação sobre evento de inauguração de unidade franqueada:</label>
+                <textarea id="distributionChannels" name="Inauguração" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="marketSegment">Indicação de existência de conselho ou associação de franqueados, com as atribuições, os poderes e os mecanismos de representação perante o franqueador, e detalhamento das competências para gestão e fiscalização da aplicação dos recursos de fundos existentes:</label>
+                <textarea id="marketSegment" name="Conselho de Franqueados" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="productMixAttractiveness">Informação sobre realização de Convenções de Franqueados e funcionamento básico das mesmas:</label>
+                <textarea id="productMixAttractiveness" name="Convenções da Rede" required></textarea>
+            </div>
+            
+            <div class="form-group section-title">POLÍTICA DE ATUAÇÃO TERRITORIAL</div>
+            <div class="form-group">
+                <label for="productMixComposition">Informações relativas à política de atuação territorial, devendo ser especificado se é garantida ao franqueado a exclusividade ou a preferência sobre determinado território de atuação e, neste caso, sob que condições:</label>
+                <textarea id="productMixComposition" name="Atuação Territorial" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="productDifferentiation">Se há possibilidade de o franqueado realizar vendas ou prestar serviços fora de seu território ou realizar exportações:</label>
+                <textarea id="productDifferentiation" name="Vendas fora do território" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="competitionLevel">Se há e quais são as regras de concorrência territorial entre unidades próprias e franqueadas:</label>
+                <textarea id="competitionLevel" name="Regras de concorrência" required></textarea>
+            </div>
+                        
+            <div class="form-group section-title">FINANCEIRO</div>
+            <div class="form-group">
+                <label for="productMixComposition">Balanços e demonstrações financeiras da empresa franqueadora, relativos aos 2 (dois) últimos exercícios:</label>
+                <textarea id="productMixComposition" name="Demonstrações Econômico-Financeiras" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="productDifferentiation">Especificações quanto ao total estimado do investimento inicial necessário à aquisição, à implantação e à entrada em operação da franquia:</label>
+                <textarea id="productDifferentiation" name="Estimativa de investimento" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="competitionLevel">Informações claras quanto a taxas periódicas e outros valores a serem pagos pelo franqueado ao franqueador ou a terceiros por este indicados, detalhando as respectivas bases de cálculo e o que elas remuneram ou o fim a que se destinam, indicando, especificamente:</label>
+                <textarea id="competitionLevel" name="Taxas periódicas" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="pricingPosition">Informações sobre a existência de cotas mínimas de compra pelo franqueado junto ao franqueador, ou a terceiros por este designados, e sobre a possibilidade e as condições para a recusa dos produtos ou serviços exigidos pelo franqueador:</label>
+                <textarea id="pricingPosition" name="Cotas mínimas" required></textarea>
+            </div>
+             <div class="form-group">
+                <label for="pricingPosition">Especificação precisa do prazo contratual:</label>
+                <textarea id="pricingPosition" name="Duração do contrato" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="pricingPosition">Informação sobre exigência de garantia para contrato de franquia (1 fiador, por exemplo):</label>
+                <textarea id="pricingPosition" name="Aval ou Fiador" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="button" onclick="generateReport()">Gerar Relatório</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function generateReport() {
+            const form = document.getElementById('diagnosticoForm');
+            const formData = new FormData(form);
+            let report = `
+                <html>
+                <head>
+                    <title>Relatório de Diagnóstico de Franqueabilidade</title>
+                    <style>
+                        body { font-family: Arial, sans-serif; margin: 20px; }
+                        h1 { color: #35424a; text-align: center; }
+                        .section { margin-bottom: 20px; }
+                        .section-title { color: #e8491d; font-size: 18px; margin-bottom: 10px; }
+                        .question { font-weight: bold; color: #35424a; }
+                        .answer { margin-bottom: 10px; }
+                        header img {
+                            width: 150px;
+                            position: absolute;
+                            top: 20px;
+                            right: 20px;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <header>
+                        <img src="C:\Users\marco\OneDrive\Área de Trabalho\Legacy logo.png" alt="Legacy Franchising" style="position: absolute; top: 20px; right: 20px;">
+                        <h1>Relatório de Diagnóstico de Franqueabilidade</h1>
+                    </header>
+            `;
+
+            let currentSection = '';
+
+            formData.forEach((value, key) => {
+                if (key.includes("section-title")) {
+                    currentSection = `<div class="section"><div class="section-title">${value}</div>`;
+                    report += currentSection;
+                } else {
+                    report += `
+                        <div class="question">${key}:</div>
+                        <div class="answer">${value}</div>
+                    `;
+                }
+            });
+
+            report += '</div></body></html>';
+
+            const reportWindow = window.open('', '', 'width=800,height=600');
+            reportWindow.document.write(report);
+            reportWindow.document.close();
+            reportWindow.print();
+        }
+    </script>
+</body>
+</html>
